@@ -1,28 +1,35 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-redux-toolkit-typescript-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Gatsby, Redux-Toolkit and Typescript starter",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Saimir Kapaj",
   "dependencies": {
-    "gatsby": "^2.19.43",
-    "gatsby-image": "^2.2.43",
-    "gatsby-plugin-manifest": "^2.2.47",
-    "gatsby-plugin-offline": "^3.0.40",
-    "gatsby-plugin-react-helmet": "^3.1.23",
-    "gatsby-plugin-sharp": "^2.4.12",
-    "gatsby-source-filesystem": "^2.1.55",
-    "gatsby-transformer-sharp": "^2.3.18",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "gatsby": "^2.20.3",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-manifest": "^2.3.2",
+    "gatsby-plugin-offline": "^3.1.1",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sharp": "^2.5.2",
+    "gatsby-plugin-typescript": "^2.3.1",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@types/node": "^13.9.3",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "prettier": "^2.0.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "typescript",
+    "redux",
+    "redux-toolkit",
+    "styled-components"
   ],
   "license": "MIT",
   "scripts": {
@@ -36,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/SaimirKapaj/gatsby-redux-toolkit-typescript-starter"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
