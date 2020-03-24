@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby, Redux-Toolkit and Typescript starter`,
+    title: `Gatsby starter`,
     description: `Gatsby, Redux-Toolkit and Typescript starter`,
     author: `Saimir Kapaj`
   },
