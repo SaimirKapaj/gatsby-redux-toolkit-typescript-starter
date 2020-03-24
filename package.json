@@ -22,6 +22,7 @@
     "@types/node": "^13.9.3",
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
+    "@types/react-helmet": "^5.0.15",
     "prettier": "^2.0.1"
   },
   "keywords": [
