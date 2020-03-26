@@ -27,6 +27,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/assets/images/gatsby-icon.png`
       }
-    }
+    },
+    `gatsby-plugin-styled-components`
   ]
 };
