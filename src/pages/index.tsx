@@ -16,7 +16,7 @@ const IndexPage: React.FC = () => {
       <SEO title="Home" />
       <h1>Theme mode: {themeMode}</h1>
       <div>
-        <button onClick={() => dispatch(toggleThemeMode())}>Switch</button>
+        <button onClick={() => dispatch(toggleThemeMode())}>Switch theme mode</button>
       </div>
 
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

@@ -14,6 +14,11 @@ interface IProps {
   children: React.ReactNode;
 }
 
+/**
+ * Layout component
+ *
+ * @param {IProps} props
+ */
 const Layout: React.FC<IProps> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

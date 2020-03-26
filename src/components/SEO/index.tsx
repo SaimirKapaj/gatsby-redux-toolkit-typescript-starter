@@ -19,6 +19,11 @@ interface IProps {
   title: string;
 }
 
+/**
+ * SEO component
+ *
+ * @param {IProps} props
+ */
 const SEO: React.FC<IProps> = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
