@@ -28,6 +28,8 @@ module.exports = {
         icon: `src/assets/images/gatsby-icon.png`
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-tailwindcss`
   ]
 };

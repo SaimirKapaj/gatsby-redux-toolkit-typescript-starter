@@ -6,6 +6,7 @@ import { uiSelector } from 'state/slices/ui';
 
 import Header from 'components/Header';
 
+import 'styles/global.css';
 import GlobalStyles from 'styles/globalStyles';
 import * as Theme from 'styles/theme';
 import * as Styled from './styles';
