@@ -1,11 +1,11 @@
-import { TObject } from 'helpers/definitions';
+import { ObjectType } from 'helpers/definitions';
 
 /**
  * ----------------------------------------
  * colors
  * ----------------------------------------
  */
-export const colors: TObject = {
+export const colors: ObjectType = {
   white: '#ffffff',
   black: '#222222'
 };

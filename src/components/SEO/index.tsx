@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-type TMeta =
+type Meta =
   | {
       name: string;
       content: any;
@@ -12,19 +12,19 @@ type TMeta =
       content: any;
     };
 
-interface IProps {
+interface Props {
   description?: string;
   lang?: string;
-  meta?: TMeta[];
+  meta?: Meta[];
   title: string;
 }
 
 /**
  * SEO component
  *
- * @param {IProps} props
+ * @param {Props} props
  */
-const SEO: React.FC<IProps> = ({ description, lang, meta, title }) => {
+const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {

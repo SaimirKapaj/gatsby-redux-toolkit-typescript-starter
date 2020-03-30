@@ -11,16 +11,16 @@ import GlobalStyles from 'styles/globalStyles';
 import * as Theme from 'styles/theme';
 import * as Styled from './styles';
 
-interface IProps {
+interface Props {
   children: React.ReactNode;
 }
 
 /**
  * Layout component
  *
- * @param {IProps} props
+ * @param {Props} props
  */
-const Layout: React.FC<IProps> = ({ children }) => {
+const Layout: React.FC<Props> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

@@ -3,15 +3,15 @@ import { Link } from 'gatsby';
 
 import * as Styled from './styles';
 
-interface IProps {
+interface Props {
   siteTitle: string;
 }
 
 /**
  *
- * @param {IProps} props
+ * @param {Props} props
  */
-const Header: React.FC<IProps> = ({ siteTitle }) => (
+const Header: React.FC<Props> = ({ siteTitle }) => (
   <Styled.Header>
     <Styled.HeaderContainer>
       <Styled.Title>

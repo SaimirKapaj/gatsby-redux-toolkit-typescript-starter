@@ -1,1 +1,3 @@
-export type TObject = Record<string, any>;
+export type ObjectType = Record<string, any>;
+
+// below add additional types / generics
