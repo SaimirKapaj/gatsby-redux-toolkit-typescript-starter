@@ -8,6 +8,7 @@ interface Props {
 }
 
 /**
+ * Header component
  *
  * @param {Props} props
  */

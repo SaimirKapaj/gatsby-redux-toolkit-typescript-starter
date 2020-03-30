@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThemeType } from 'styles/theme';
+import { ThemeType } from 'assets/styles/theme';
 
 export default createGlobalStyle<{ theme: ThemeType }>`
   body {
