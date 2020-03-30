@@ -9,7 +9,7 @@ import Header from 'components/Header';
 import 'styles/global.css';
 import GlobalStyles from 'styles/globalStyles';
 import * as Theme from 'styles/theme';
-import * as Styled from './styles';
+import { LayoutContainer } from './styles';
 
 interface Props {
   children: React.ReactNode;
@@ -37,14 +37,14 @@ const Layout: React.FC<Props> = ({ children }) => {
     <ThemeProvider theme={Theme[themeMode]}>
       <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Styled.LayoutContainer>
+      <LayoutContainer>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </Styled.LayoutContainer>
+      </LayoutContainer>
     </ThemeProvider>
   );
 };

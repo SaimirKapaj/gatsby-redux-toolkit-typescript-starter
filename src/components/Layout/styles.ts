@@ -1,8 +1,6 @@
 import styled from 'styled-components';
+import tw from 'tailwind.macro';
 
 export const LayoutContainer = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
-  background: ${(props) => props.theme.colors.bg};
+  ${tw`max-w-screen-lg mx-auto p-5 `};
 `;

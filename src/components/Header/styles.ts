@@ -1,14 +1,12 @@
 import styled from 'styled-components';
+import tw from 'tailwind.macro';
 
-export const Header = styled.header`
-  background: rebeccapurple;
-  margin-bottom: 1.45rem;
+export const HeaderBg = styled.header`
+  ${tw`bg-purple-700 mb-5`};
 `;
 
 export const HeaderContainer = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  ${tw`flex flex-wrap items-center justify-between max-w-screen-lg mx-auto p-5 `};
 `;
 
 export const Title = styled.h3`

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import * as Styled from './styles';
+import { HeaderBg, HeaderContainer, Title } from './styles';
 
 interface Props {
   siteTitle: string;
@@ -12,9 +12,9 @@ interface Props {
  * @param {Props} props
  */
 const Header: React.FC<Props> = ({ siteTitle }) => (
-  <Styled.Header>
-    <Styled.HeaderContainer>
-      <Styled.Title>
+  <HeaderBg>
+    <HeaderContainer>
+      <Title>
         <Link
           to="/"
           style={{
@@ -24,9 +24,9 @@ const Header: React.FC<Props> = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </Styled.Title>
-    </Styled.HeaderContainer>
-  </Styled.Header>
+      </Title>
+    </HeaderContainer>
+  </HeaderBg>
 );
 
 Header.defaultProps = {
