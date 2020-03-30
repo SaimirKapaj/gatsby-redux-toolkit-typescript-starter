@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { useSelector, useDispatch } from 'react-redux';
-import { uiSelector, toggleThemeMode } from 'state/slices/ui';
+import { uiSelector, toggleThemeMode } from 'state/ui';
 
 import Layout from 'components/Layout';
 import Image from 'components/Image';

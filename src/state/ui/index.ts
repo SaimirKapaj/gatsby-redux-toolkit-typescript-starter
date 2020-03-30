@@ -1,17 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { TRootState } from 'state/store';
+import { RootState } from 'state/store';
 
-export enum EThemeMode {
+export enum ThemeMode {
   LIGHT = 'light',
   DARK = 'dark'
 }
 
-interface IUIState {
-  themeMode: EThemeMode;
+interface UIState {
+  themeMode: ThemeMode;
 }
 
-const initialState: IUIState = {
-  themeMode: EThemeMode.LIGHT
+const initialState: UIState = {
+  themeMode: ThemeMode.LIGHT
 };
 
 const uiSlice = createSlice({
@@ -19,7 +19,7 @@ const uiSlice = createSlice({
   initialState,
   reducers: {
     toggleThemeMode: (state) => {
-      state.themeMode = state.themeMode === EThemeMode.LIGHT ? EThemeMode.DARK : EThemeMode.LIGHT;
+      state.themeMode = state.themeMode === ThemeMode.LIGHT ? ThemeMode.DARK : ThemeMode.LIGHT;
     }
   }
 });
@@ -31,4 +31,4 @@ export const { toggleThemeMode } = uiSlice.actions;
 export default uiSlice.reducer;
 
 // Selectors
-export const uiSelector = (state: TRootState) => state.ui;
+export const uiSelector = (state: RootState) => state.ui;

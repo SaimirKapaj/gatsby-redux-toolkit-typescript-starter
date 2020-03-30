@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
 import { useSelector } from 'react-redux';
-import { uiSelector } from 'state/slices/ui';
+import { uiSelector } from 'state/ui';
 
 import Header from 'components/Header';
 
