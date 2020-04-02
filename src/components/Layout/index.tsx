@@ -5,11 +5,12 @@ import { useSelector } from 'react-redux';
 import { uiSelector } from 'state/ui';
 
 import Header from 'components/Header';
+import Footer from 'components/Footer';
 
 import 'assets/styles/global.css';
 import GlobalStyles from 'assets/styles/globalStyles';
 import * as Theme from 'assets/styles/theme';
-import { LayoutContainer } from './styles';
+import { LayoutWrapper, MainWrapper } from './styles';
 
 interface Props {
   children: React.ReactNode;
@@ -36,15 +37,11 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <ThemeProvider theme={Theme[themeMode]}>
       <GlobalStyles />
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <LayoutContainer>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </LayoutContainer>
+      <LayoutWrapper>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <MainWrapper>{children}</MainWrapper>
+        <Footer />
+      </LayoutWrapper>
     </ThemeProvider>
   );
 };
