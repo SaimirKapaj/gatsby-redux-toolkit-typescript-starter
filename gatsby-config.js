@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Redux-Toolkit`,
-    description: `Gatsby, Redux-Toolkit, Typescript & Styled Components starter`,
+    description: `Gatsby, Redux-Toolkit, Typescript, Styled Components & Tailwind CSS starter`,
     author: `Saimir Kapaj`
   },
   plugins: [
@@ -19,15 +19,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `gatsby-redux-toolkit-typescript-starter`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#667EEA`,
+        theme_color: `#667EEA`,
         display: `minimal-ui`,
         icon: `src/assets/images/gatsby-icon.png`
       }
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-tailwindcss`
