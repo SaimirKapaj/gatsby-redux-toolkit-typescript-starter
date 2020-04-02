@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import { HeaderBg, HeaderContainer, Title } from './styles';
+import MainNav from './MainNav';
+import SwitchThemeMode from './SwitchThemeMode';
+
+import { HeaderWrapper, Title } from './styles';
 
 interface Props {
   siteTitle: string;
@@ -13,21 +16,13 @@ interface Props {
  * @param {Props} props
  */
 const Header: React.FC<Props> = ({ siteTitle }) => (
-  <HeaderBg>
-    <HeaderContainer>
-      <Title>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </Title>
-    </HeaderContainer>
-  </HeaderBg>
+  <HeaderWrapper>
+    <Link to="/">
+      <Title>{siteTitle}</Title>
+    </Link>
+    <MainNav />
+    <SwitchThemeMode />
+  </HeaderWrapper>
 );
 
 Header.defaultProps = {
