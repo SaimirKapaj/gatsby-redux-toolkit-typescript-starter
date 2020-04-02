@@ -1,29 +1,21 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { useSelector, useDispatch } from 'react-redux';
-import { uiSelector, toggleThemeMode } from 'state/ui';
 
 import Layout from 'components/Layout';
-import Image from 'components/Image';
 import SEO from 'components/SEO';
 
 const IndexPage: React.FC = () => {
-  const { themeMode } = useSelector(uiSelector);
-  const dispatch = useDispatch();
-
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Theme mode: {themeMode}</h1>
-      <div>
-        <button onClick={() => dispatch(toggleThemeMode())}>Switch theme mode</button>
+      <div className="text-center">
+        <h1 className="text-2xl font-semibold">Gatsby Redux-Toolkit Starter</h1>
+        <p className="mt-5">
+          This is a starter for <span className="font-semibold">Gatsby</span> websites using{' '}
+          <span className="font-semibold">Redux-Toolkit</span>, <span className="font-semibold">Typescript</span>,{' '}
+          <span className="font-semibold">Styled Components</span>, <span className="font-semibold">Talwind CSS</span> &{' '}
+          <span className="font-semibold">React Font Awasome</span>.
+        </p>
       </div>
-
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-
-      <Link to="/page-2/">Go to page 2</Link>
     </Layout>
   );
 };
