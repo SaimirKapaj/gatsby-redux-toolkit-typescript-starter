@@ -4,20 +4,23 @@ interface Theme {
   colors: {
     primary: string;
     secondary: string;
+    border: string;
   };
 }
 
 export const light: Theme = {
   colors: {
-    primary: colors.white,
-    secondary: colors.black
+    primary: colors.gray200,
+    secondary: colors.gray800,
+    border: colors.gray400
   }
 };
 
 export const dark: Theme = {
   colors: {
-    primary: colors.black,
-    secondary: colors.white
+    primary: colors.gray900,
+    secondary: colors.gray400,
+    border: colors.gray800
   }
 };
 

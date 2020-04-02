@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { ThemeType } from 'assets/styles/theme';
+import tw from 'tailwind.macro';
 
 export default createGlobalStyle<{ theme: ThemeType }>`
   body {
@@ -9,6 +10,6 @@ export default createGlobalStyle<{ theme: ThemeType }>`
   }
 
   a {
-    color: rebeccapurple
+    ${tw`text-indigo-500 hover:text-indigo-600`};
   }
 `;
