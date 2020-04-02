@@ -1,8 +1,33 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
-import { MainNavWrapper, Nav, NavItem, OpenNavButton, CloseNavButton } from './styles';
 import Icon from 'utils/Icon';
+
+import { MainNavWrapper, Nav, NavItem, OpenNavButton, CloseNavButton } from './styles';
+
+interface NavItem {
+  title: string;
+  slug: string;
+}
+
+const navItems: NavItem[] = [
+  {
+    title: 'Home',
+    slug: '/'
+  },
+  {
+    title: 'About',
+    slug: '/about/'
+  },
+  {
+    title: 'Blog',
+    slug: '/blog/'
+  },
+  {
+    title: 'Contact Us',
+    slug: '/contact/'
+  }
+];
 
 const MainNav: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -16,26 +41,13 @@ const MainNav: React.FC = () => {
         <CloseNavButton onClick={() => setOpen(false)}>
           <Icon icon="times" />
         </CloseNavButton>
-        <NavItem>
-          <Link to="/" activeClassName="active">
-            Home
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link to="/about/" activeClassName="active">
-            About
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link to="/blog/" activeClassName="active">
-            Blog
-          </Link>
-        </NavItem>
-        <NavItem>
-          <Link to="/contact/" activeClassName="active">
-            Contact Us
-          </Link>
-        </NavItem>
+        {navItems.map((item, index) => (
+          <NavItem key={`nav-item-${index}`}>
+            <Link to={item.slug} activeClassName="active">
+              {item.title}
+            </Link>
+          </NavItem>
+        ))}
       </Nav>
     </MainNavWrapper>
   );
