@@ -13,7 +13,7 @@ const IndexPage: React.FC = () => {
           This is a starter for <span className="font-semibold">Gatsby</span> websites using{' '}
           <span className="font-semibold">Redux-Toolkit</span>, <span className="font-semibold">Typescript</span>,{' '}
           <span className="font-semibold">Styled Components</span>, <span className="font-semibold">Talwind CSS</span> &{' '}
-          <span className="font-semibold">React Font Awasome</span>.
+          <span className="font-semibold">React Font Awesome</span>.
         </p>
       </div>
     </Layout>
